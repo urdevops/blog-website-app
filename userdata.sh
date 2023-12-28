@@ -3,15 +3,15 @@ apt-get update -y
 apt-get install git -y
 apt-get install python3.8 -y
 cd /home/ubuntu/
-TOKEN="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"
-git clone https://$TOKEN@github.com/alledevops/blog-page-app-django-on-aws
-cd /home/ubuntu/blog-page-app-django-on-aws
+TOKEN="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"
+git clone https://$TOKEN@github.com/urdevops/blog-website-app.git
+cd /home/ubuntu/blog-website-app
 apt-get install python3-pip -y
 apt-get install python3.8-dev default-libmysqlclient-dev -y
 apt-get install libjpeg-dev -y
 pip install testresources
 pip3 install -r requirements.txt
-cd /home/ubuntu/blog-page-app-django-on-aws/src
+cd /home/ubuntu/blog-website-app/src
 python3 manage.py collectstatic --noinput
 python3 manage.py makemigrations
 python3 manage.py migrate
